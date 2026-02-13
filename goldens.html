@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Retriever Therapy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .polaroid {
+            background: white;
+            padding: 10px 10px 30px 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transform: rotate(-2deg);
+            transition: transform 0.3s;
+        }
+        .polaroid:nth-child(even) { transform: rotate(2deg); }
+        .polaroid:hover { transform: scale(1.05) rotate(0deg); z-index: 5; }
+        
+        .polaroid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 2px;
+        }
+        .caption {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #d4a017;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>The "One Day" Dream 🏠🐕</h1>
+        <p>Apartment living is temporary, but Golden Retriever love is forever.</p>
+    </header>
+
+    <div class="gallery-container">
+    <div class="polaroid">
+        <img src="https://i.ibb.co/0jm5mcpm/cute-fluffy-golden-retriever-sitting-grass-park.jpg" alt="cute fluffy golden retriever sitting grass park">
+        <p class="caption">Majestic floof 🦁</p>
+    </div>
+
+    <div class="polaroid">
+        <img src="https://i.ibb.co/d41MncDx/shallow-focus-shot-old-golden-retriever-with-four-puppies-resting-grass-ground.jpg" alt="golden retriever with puppies">
+        <p class="caption">Double (x4) the trouble ✨</p>
+    </div>
+
+    <div class="polaroid">
+        <img src="https://i.ibb.co/twq9Nbmw/beautiful-shot-golden-retriever-wearing-cool-sunglasses-red-handkerchief.jpg" alt="golden retriever in sunglasses">
+        <p class="caption">Main character energy 😎</p>
+    </div>
+
+    <div class="polaroid">
+        <img src="https://i.ibb.co/3yMGDLX3/shallow-focus-shot-cute-golden-retriever-puppy-sitting-grass-ground.jpg" alt="cute puppy in grass">
+        <p class="caption">The puppy eyes! 🥺</p>
+    </div>
+
+    <div class="polaroid">
+        <img src="https://i.ibb.co/7twTQHyW/happy-pet-dogs-playing-park.jpg" alt="happy pet dogs playing">
+        <p class="caption">Big smiles 😁</p>
+    </div>
+
+    <div class="polaroid">
+        <img src="https://i.ibb.co/gFtpVfqn/cute-dog-beach.jpg" alt="cute dog beach">
+        <p class="caption">Pure sunshine ☀️</p>
+    </div>
+
+    <div class="polaroid">
+        <img src="https://i.ibb.co/93hcGKzh/shallow-focus-shot-cute-golden-retriever-puppy-resting-couch.jpg" alt="puppy on couch">
+        <p class="caption">Nap time 😴</p>
+    </div>
+
+    <div class="polaroid">
+        <img src="https://i.ibb.co/WWSpjvYg/woman-brown-sweater-lady-with-labrador.jpg" alt="woman with labrador">
+        <p class="caption">Ready for a walk 🐾</p>
+    </div>
+</div>
+
+    <br>
+    <a href="index.html" style="color: #FFB300; font-weight: bold; text-decoration: none; padding-bottom: 40px; display: inline-block;">← Back to the Silhouette</a>
+
+</body>
+</html>

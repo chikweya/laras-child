@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Closet Analytics</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            border: 3px solid #FFD700;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+        }
+        .big-number { font-size: 2.5rem; color: #FFB300; font-weight: 600; }
+        .chart-bar { background: #FFF9E3; height: 20px; border-radius: 10px; margin: 10px 0; overflow: hidden; position: relative; }
+        .fill { background: #FFB300; height: 100%; width: 100%; } /* Everyday is a banger */
+        /* Layout for the Curly Hair Card */
+.curly-hair-shoutout {
+    grid-column: 1 / -1; /* Makes it span the full width of the grid */
+    background: #FFFDE7;
+    border: 2px dashed #FFB300;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    gap: 20px;
+}
+
+.shoutout-content {
+    flex: 2; /* Takes up more space for the text */
+    text-align: left;
+}
+
+.shoutout-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.shoutout-image img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%; /* Keeps it a cute circle */
+    border: 4px solid #FFD700;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 600px) {
+    .curly-hair-shoutout {
+        flex-direction: column;
+        text-align: center;
+    }
+    .shoutout-content {
+        text-align: center;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Closet & Influence Analytics 📈</h1>
+        <p>A deep dive into how she single-handedly carries the economy.</p>
+    </header>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <h3>Banger Outfit Frequency</h3>
+            <div class="chart-bar"><div class="fill"></div></div>
+            <p><strong>Result:</strong> 7/7 Days a week. Absolute slay.</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Brands Saved from Bankruptcy</h3>
+            <p class="big-number">12+</p>
+            <p>Companies that went viral after she stepped out in their fit.</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>'Fix My Curls' Stock Value</h3>
+            <p class="big-number">↑ 450%</p>
+            <p>Market surge after people (including me!) turned heads at those natural curls.</p>
+        </div>
+
+       <div class="stat-card curly-hair-shoutout">
+    <div class="shoutout-content">
+        <p>✨ <em>"Is that the girl from the trendy naturally curly hair video?"</em> — Everyone, probably. ✨</p>
+    </div>
+    <div class="shoutout-image">
+        <img src="curls.jpg" alt="Naturally Curly Hair Trend">
+    </div>
+</div>
+
+        <div class="stat-card">
+            <h3>Jhumkha Weight Distribution</h3>
+            <p>Average Slay: <strong>Infinite</strong></p>
+            <p>Neck strength required to carry that much elegance: 100/100.</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Makeup "Lara-fication" Level</h3>
+            <p class="big-number">Maxed Out</p>
+            <p>Glow levels exceeding safety regulations.</p>
+        </div>
+    </div>
+
+    <br>
+    <a href="index.html" style="color: #FFB300; font-weight: bold; text-decoration: none;">← Back to the Silhouette</a>
+
+</body>
+</html>
